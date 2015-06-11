@@ -15,6 +15,15 @@ typedef struct PuntoLista {
 }Elemento;
 
 typedef struct{
+VECTOR centro;
+VECTOR upVector;
+double alpha;
+double height;
+RGB color;
+double KD;
+}CONO;
+
+typedef struct{
     VECTOR normal;
     double D;
     Elemento puntos[10];
