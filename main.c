@@ -35,7 +35,7 @@ VECTOR PuntoInterseccion (Ray Rayo, double distancia);
  VECTOR DireccionNormalizada (VECTOR Destino, VECTOR Origen );
 #include "esferas.c"
 #include "poligonos.c"
-
+#include "conos.c"
 
  void CreaEsferas();
 
