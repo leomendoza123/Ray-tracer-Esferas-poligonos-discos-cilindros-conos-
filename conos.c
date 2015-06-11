@@ -55,7 +55,7 @@ INTERSECTION First_Intersection_Conos(double *distanciaAnterior, Ray Rayo, int *
                             interseccion.distancia = distancia;
                             interseccion.cono = Cono;
                             *distanciaAnterior = distancia;
-                            *tipoObjeto = 2;
+                            *tipoObjeto = 3;
                          }
                     }
                     return interseccion;
