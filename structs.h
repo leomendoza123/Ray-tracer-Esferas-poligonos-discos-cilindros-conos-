@@ -44,6 +44,7 @@ typedef struct{
     double distancia;
     ESFERA esfera;
     POLIGONO poligono;
+    CONO cono;
     VECTOR puntoInterseccion;
 
 } INTERSECTION;

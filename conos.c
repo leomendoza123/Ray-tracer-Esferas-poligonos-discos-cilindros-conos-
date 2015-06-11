@@ -37,3 +37,29 @@ if (t1<t2){
 }
 
 }
+
+
+
+INTERSECTION First_Intersection_Conos(double *distanciaAnterior, Ray Rayo, int *tipoObjeto){
+                    INTERSECTION  interseccion;
+                    int existeInterseccion;
+                    int numConos = sizeof(listaConos)/sizeof(listaConos[0]);
+                    int x;
+
+                    for (x=0; x < numConos; x++){
+                        double distancia;
+                        CONO Cono = listaConos[x];
+                         existeInterseccion = HayInterseccionConConos (&Rayo, &Cono, &distancia);
+
+                         if (existeInterseccion && distancia<*distanciaAnterior && distancia>0.000001  ){
+                            interseccion.distancia = distancia;
+                            interseccion.cono = Cono;
+                            *distanciaAnterior = distancia;
+                            *tipoObjeto = 2;
+                         }
+                    }
+                    return interseccion;
+                }
+
+
+
