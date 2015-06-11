@@ -1,4 +1,4 @@
-int HayInterseccionconConos(Ray *rayo,double *distancia)
+int HayInterseccionconConos(Ray *rayo,CONO *cono,double *distancia)
 {
 Ray ray = *rayo;
 double a = vectorProductoPunto(rayo->direccion, rayo->direccion);
